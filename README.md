@@ -1,2 +1,0 @@
-# kd
-knowledge database
