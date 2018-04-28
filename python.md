@@ -1,8 +1,7 @@
-<!--ts-->
+#### Table of Content
    * [argparse](#argparse)
    * [gzip file](#gzip-file)
    * [build-in decorators](#build-in-decorators)
-<!--te-->
 
 #### Argparse
 
