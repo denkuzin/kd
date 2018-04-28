@@ -77,7 +77,7 @@ Basically:
 	Why we need @staticmethod?
 	You might want to move a function into a class because it logically belongs with the class. In the Python source code (e.g. multiprocessing,turtle,dist-packages), it is used to "hide" single-underscore "private" functions from the module namespace. Its use, though, is highly concentrated in just a few modules -- perhaps an indication that it is mainly a stylistic thing. Though I could not find any example of this, @staticmethod might help organize your code by being overridable by subclasses. Without it you'd have variants of the function floating around in the module namespace
 
-**@property**
+- **@property**
 The first part is simple:
     @property
     def x(self): ...
@@ -85,7 +85,6 @@ is the same as
     def x(self): ...
     x = property(x)
 which, in turn, is the simplified syntax for creating a property with just a getter.
-
 The next step would be to extend this property with a setter and a deleter. And this happens with the appropriate methods:
     @x.setter 
     def x(self, value): ...
