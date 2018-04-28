@@ -1,0 +1,333 @@
+/* scc rules */
+h1 {
+  font-size: 18px;
+  color: blue;
+}
+
+p, h1, h2 {
+  font-size: 18px;
+  color: green
+}
+
+
+
+a {
+  color: SeaGreen;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 100%;
+}
+
+
+-----------------------------------------------------------------------
+/*COLORS*/
+background-color: Blue;
+color:FireBrick;
+/* 
+colors: 
+    -named colors like: blue, FireBrick, DarkSlateGray, MidnightBlue, Aqua... 147 are available
+     all list of colors:http://www.colors.commutercreative.com/grid/
+    -rgb(123, 20, 233) is (R,G,B) values between 0 and 255
+    -rgba(123, 88, 9, 0.5), 0.5 is alpha value that represents the opacity of a color
+    -hexadecimal color codes like #09AA34: 09 - red, AA - green, 34 - blue
+    -HSL stands for Hue, Saturation, and Lightness: hsl(182, 20%, 50%)    0 < hue < 360 is color
+    -HSLa
+    -note: there are browsers do not support RGBa, HSL, or HSLa, so it's better to dublicate records:
+     like h1 {
+               color: rgb(22, 34, 88); 
+               color: rgba(22, 34, 88, 0.4);}
+*/
+
+------------------------------------------------------------------------
+/*FONTS*/
+
+font-family: Georgia;
+font-family: "Times New Roman";
+font-size: 18px etc.
+/*
+font-family:
+    -"Times New Roman", Georgia, Courier New
+    -font-family: Garamond, Times, serif;
+     means:
+     use Garamond
+     if that font is not available, use the Times
+     if both of those fonts are not available, use any serif font pre-installed
+
+serif: the letters in these fonts have extra details on the ends of each letter (Times New Roman or Georgia)
+san-serif: the letters in these fonts do not have extra details on the ends of each letter (Arial or Helvetica)
+*/
+
+/* afterwards, you can modify (or remove) that styling for specific elements that don't require it */  
+* {
+  font-family: 'Georgia', 'Times', serif;
+}
+
+ font-size: 16px
+ font-size: 1em
+ font-size: 100%
+/*there are three units of measurement for front size:
+-px 18px
+-em (it is equal to the width of the letter 'm')
+-%  (the default size of text in web browsers is 16px and when percentages are used, they set the size of text relative to this default size, so 200% means 32px)*/
+
+/*the vertical spacing between lines*/
+line-height: 1.5em
+
+/*the spacing between words in a body of text*/
+word-spacing: 0.3em
+
+/*the spacing between words (usualy it is used for )*/
+letter-spacing: 0.3em
+
+/* bold font */
+font-weight: bold;
+             normal;
+             100(thin),200,..,400(normal),...,900(bold)
+
+/* cursive font */
+font-style: italic;
+
+/*upper and lower cases*/
+text-transform: uppercase
+                lowercase
+
+/*place of the text on page*/
+text-align: left (default value)
+            right
+            center
+
+
+----------------------------------------------------------------------
+/* style standart in CSS:
+indents: 2 spaces, no extra spaces before the secod brace, 2 spaces before CSS declarations*/
+p {
+  color: red;
+}
+
+-----------------------------------------------------------------------
+/* To style a specific element labeled with an ID, you can use an ID selector in the stylesheet.*/:
+#botswana {
+  background-color: #56ABFF;
+}
+
+/* to style a class: */
+.science {
+  font-family: Georgia, Times, serif;
+}
+/* or, you can style a part of class, for examples, paragraphes: */
+p.science {
+  line-height: 1/3em;
+}
+/*also, you can apply the same style for a few classes:*/
+.first, .second {
+  font-size: 20px;
+}
+
+/*to style divs*/
+div.container {
+  font-family: Roboto
+}
+
+-----------------------------------------------------------------------
+/* '*' - the universal selector, for selecting all elements */
+
+------------------------------------------------------------------------
+/* CONTAINERS */
+/*all elements are in containers on web page*/
+
+/* all containers has default dimensions that equals to optimal dimensions to held the content of the box
+to customize dimansions, you can use:*/
+width: 300px
+       10em
+       70%
+height: 350px etc..
+
+/*because a web page can be viewed through displays of different screen size, the content on the web page can suffer from those changes in size. To avoid the problem there is : min-width and max-width and min-height...*/
+p {
+  min-width: 300px;
+  max-width: 600px;
+}
+
+/*if size of content is more then max-height/max-width you can set:*/
+overflow: scroll;
+          hidden;
+
+-----------------------------------------------------------------------
+/* BORDERS */
+
+* { 
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}  /*to show all boxes in page*/
+border-style: solid - border is a solid line
+              dashed - border is a series of lines or dashes
+              dotted - border is a series of square dots
+              double - border is two solid black lines
+              groove - border is a groove (or carving)
+              inset - border appears to cut into the screen
+              outset - border appears to pop out of the screen
+              ridge - border appears as a picture frame
+              hidden or none - no border
+border-width: thin
+              medium
+              thick
+              2px
+border-width: 3px 1px 2px 1p   /*top, right, bottom, left*/
+border-top-width: 3px
+border-right-width: 1px
+border-bottom-width: 2px
+border-left-width: 1px
+border-color: rgb(22, 77, 100)
+              red, etc
+
+/*short record*/
+div.container {
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(22, 77, 100);
+} /*and is equal to*/
+div.container {
+  border: 3px solid rgb(22, 77, 100);
+}
+
+/*the corners of an element's border box can be modified with the*/
+border-radius: 5px
+               100% /*shape of container will be circle*/
+
+/*space between the content and the borders*/
+padding: 10px;
+padding: 5px 10px 5px 10px  /*top, right, bottom, left*/
+(by the way, it equals to padding: 5px 10px;, if left==right and top==bottom)
+padding-top
+padding-right
+padding-bottom
+padding-left
+/*note: padding increases the dimensions of thr box*/
+
+/*space outside of the box*/
+margin: 20px
+margin: 5px 10px 5px 10px
+margin: 5px 10px
+margin-top: 
+margin-bottom: 
+margin-left: 
+margin-right: 
+margin: auto /*when the margin property is set to auto, 
+               the element being styled will center relative to its container*/
+----------------------------------------------------------------------------
+
+/* DISPLAY PROPERTIES */
+
+/*modifying the display property of an element can help achieve a desired layout for a web page*/
+display: inline
+         block
+         inline-block
+         none  /*not display the element*/
+/*if you wont ot range list item in line you can use display=inline*/
+
+/*elements can be hidden from view with the visibility property.*/
+visibility: hidden
+            visible
+
+/*Note: What's the difference between display: none and visibility: hidden? An element with display: none will be completely removed from the web page. An element with visibility: hidden, however, will not be visible on the web page, but the space reserved for it will*/
+
+------------------------------------------------------------------------------
+
+/* BOX MODEL */
+/*default final hight dimension of a box equals height + 2*padding + border (the same picture with width)*/
+/*we can reset the entire box model and specify a new one:*/
+
+* {
+  box-sizing: border-box;
+}
+/*In this box model, the height and width of the box will remain fixed. The border thickness and padding will be included inside of the box, which means the overall dimensions of the box do not change*/
+
+-------------------------------------------------------------------------------
+
+/* Layout */
+
+position: static /* the default value (it does not need to be specified)*/
+          relative
+          absolute
+          fixed /*the div will remain fixed to its position no matter where the user scrolls on the page*/
+top: 50px; 
+bottom: 100px;
+left: 75px;
+right: 40px;
+
+z-index: 1000 /*position of element: https://css-tricks.com/almanac/properties/z/z-index/ */
+
+float: left;  /*https://css-tricks.com/all-about-floats/*/
+       right
+
+clear: left;  /*https://css-tricks.com/almanac/properties/c/clear/*/
+       right;
+       both;
+       none;
+
+----------------------------------------------------------------------------------
+
+/* IMAGES */
+
+/*the same properties as other boxes/divs*/
+
+.product img {
+  width: 350px;
+         100% /*etc*/
+  height: 200px;
+  display: block;
+  margin: 0px auto
+}
+
+/*back-ground image*/
+body {
+  background-image: url("https://www.example.com/leaf.jpg");
+  background-repeat: repeat /*the default value — the image will repeat horizontally and vertically*/
+                     repeat-x /*will be repeated only along the x-axis*/
+                     repeat-y /*will be repeated only along the y-axis*/
+                     no-repeat
+
+  background-position: left top;
+                       center top;
+                       right top;
+                       left center;
+                       center center;
+                       etc /*A background image is positioned using a 3 by 3 grid 
+                             (three rows, three columns), meaning there are 9 total 
+                             possible positions for the image:*/
+
+  background: url("#") no-repeat right center; /*short way*/
+
+  background-size: cover; /*expands the image as large as possible to cover the full width or height 
+                            of a container. If the dimensions of the container (say, a div) are larger 
+                            than the dimensions of the image, the image will become distorted. 
+                            This value is best for images that don't communicate important content 
+                            to the user, like background images.*/
+                   contain;
+
+  background-attachment: scroll; /*image will be scrolled*/
+                         fixed;  /*image wil be fixed*/
+
+  background-image: -webkit-linear-gradient(#666CCC, #BC1324)  /* this value accepts two arguments: 
+                                        the two colors the linear gradient will transition to and from. 
+                                        The colors are usually specified as hex color codes.*/
+
+}
+--------------------------------------------------------------------------------------------
+/* Tables */
+table, td {
+  border: 1px solid black;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>    -   type of document(to help browser to interpretate document)
+<html>
+...  - here body of document
+</html>
+
+<...> - opening tag
+</... - closing tag
+
+
+_________________________________________
+EXAMPLE WITH DESCRIPTION:
+
+<!DOCTYPE html>    <!--type of document(to help browser to interpretate document)-->
+<html>  <!--tart of the document-->
+
+  <head>    <!--contains information about the page that isn't displayed directly on the actual web page 
+           (it will be showed in tab of browser)-->
+    <title>My Coding Journal</title>
+  </head>
+ 
+  <!-- comment -->
+  <body>
+    <!--headers-->
+    <h1>Hello World</h1>  <!--used for main headings-->
+    <h2> </h2>  <!--subheader-->
+    <h3> </h3>
+    <h4> </h4>
+    <h5> </h5>
+    <h6> </h6>
+
+  <p>The Nile River is the longest <br /> river in the world</p>    <!--paragraph element-->
+                                                                    <!--<br /> is self-closing element to start next text with new line -->
+  
+  <!--bullet points, unordered list-->
+  <ul>
+    <li>Limes</li>
+    <li>Tortillas</li>
+    <li>Chicken</li>
+  </ul>
+
+  <!--ordered list, each list item is numbered-->
+  <ol>
+    <li>Preheat the oven to 350 degrees.</li>
+    <li>Mix whole wheat flour, baking soda, and salt.</li>
+    <li>Cream the butter, sugar in separate bowl.</li>
+    <li>Add eggs and vanilla extract to bowl.</li>
+  </ol>
+
+  <!--hyperlink-->
+  <!--href is attribute of "a" element. Also there are attributes: name, value...-->
+  <!--attribute target="_blank" - For a link to open in a new window
+                        _self - Opens the linked document in the same frame as it was clicked (this is default)
+                        _parent - Opens the linked document in the parent frame
+                        _top - Opens the linked document in the full body of the window-->
+  <a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a>
+
+  <!--image 
+      doesn't have a closing tag(self-closing element)
+      attribute src - source of picture
+      attribute alt - description of picture if image fails to load on a web page or users browse the web with the aid of of screen reading software      -->
+  <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/web101-image_brownbear.jpg" alt="This is picture of bear"/>
+  <!--also we can add link to image
+      it's possible to turn images into links by simply wrapping the <img> element with an <a> element-->
+  <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"> <img scr="https://..." alt = "this is bear"/>   </a>
+
+  </body>
+</html>  <!--end of the document-->
+_______________________________________________________
+style standards of HTML:
+
+indents: 2 spaces
+<ul>
+  <li>Violin</li>
+_______________________________________________________
+CSS (Cascading Style Sheets)
+if you want to use CSS style in html code, you have to place it inside <head> using element <style> </style>, like:
+<head>
+  <style>
+    h2 {
+    font-family: Arial;
+    }
+  </style>
+</head>
+
+But it's better to separate html code and css code using different files. You can use the <link> element to link the HTML and CSS files together incide <head> element:
+<link href="/style.css" type="text/css" rel="stylesheet">
+
+Because there are so many new fonts available, it would be unrealistic to expect users to have all of them installed on their computers.
+To use a Google Font, you can use a <link> element, just like you did for a CSS stylesheet:
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" type="text/css" rel="stylesheet" >
+</head>
+
+________________________________________________________
+Classes, IDs, & Divs
+
+<!--IDs-->
+With the proper labels, we can style individual HTML elements. Specifically, we can label HTML elements with a unique identifier, or ID:
+<h1 id="botswana">Botswana</h1>
+
+<!--classes-->
+For multiple elements that should share the same styling, classes can be used to label them:
+<h1 class="science">Scientist Discovers Important Cure</h1>
+<h1 class="science">New Study Reveals The Importance of Sleep</h1>
+Later, in the stylesheet, all science headlines can be quickly styled to have the same styling.
+<!--'sub'classes-->
+<h1 class="book domestic">The Way of the Deep</h1>
+<h1 class="book foreign">A Night in the Sky</h1>
+And in css code you can style class 'book'(will be apllyed for both "book domestic" and "book foreign"), then style classes 'domastic' and 'foreign'
+
+<!--divs--> 
+it's containers of code, that groups elements that belong together (to keep HTML code easy to read)
+you can assign ID or class to 'div' container
+<div>     </div>
+_________________________________________________________
+
+Tables:
+
+<table>
+  <tr>             <!--raw element-->
+
+    <td>14</td>    <!--cell element-->
+    <td>54543</td>
+    <td colspan="2">Out of Town</td>    <!--colspan means expend cell over 2 columns-->
+    <td rowspan="2">Work</td>           <!--rowspan means expend cell over 2 rows-->
+
+    <th></th>                      <!--title element, blank heading-->
+    <th scope="col">Number</td>    <!--title element, scope 'col' makes it clear that the heading is for a column.-->
+    <th scope="row">Day</td>       <!--title element, scope 'row' makes it clear that the heading is for a row.-->
+
+  </tr>
+</table>
+
+
+<table>
+  <thead>   <!-- for table head part-->
+  </thead> 
+
+  <tbody>   <!-- for table body part-->
+  </tbody>
+
+  <tfoot>   <!-- table foot element-->
+    <tr>
+      <th>Total</th>
+      <td>$22M</td>
+      <td>$12.5M</td>
+    </tr>
+  </tfoot>
+</table>
+_________________________________________________________
+
+
+
+
+
+
+
+
+
+
