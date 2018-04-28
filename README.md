@@ -6,6 +6,8 @@ knowledge database
 """
 ARGPARSE
 """
+
+```
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -21,17 +23,18 @@ parser.add_argument(
         help="random seed to initialize a pseudorandom number generator")
 FLAGS, unparsed = parser.parse_known_args()
 print(FLAGS.gamma, FLAGS.rng_seed)
-
+```
 
 """
 gzip file
 """
+```
 import gzip
 content = ["Lots of content here", "and here"]
 f = gzip.open('file_path/file.txt.gz', 'wb')
 f.writelines(content)
 f.close()
-
+```
 
 """
 build-in decorators
