@@ -18,7 +18,6 @@ print(FLAGS.gamma, FLAGS.rng_seed)
 ```
 
 #### gzip file
-
 ``` python
 import gzip
 content = ["Lots of content here", "and here"]
@@ -28,7 +27,6 @@ f.close()
 ```
 
 #### build-in decorators
-
 ``` python
 #Example:
 class A(object):
@@ -67,7 +65,7 @@ func without any decorators is the usual way an object instance calls a method. 
 Why we need @staticmethod?
 You might want to move a function into a class because it logically belongs with the class. In the Python source code (e.g. multiprocessing,turtle,dist-packages), it is used to "hide" single-underscore "private" functions from the module namespace. Its use, though, is highly concentrated in just a few modules -- perhaps an indication that it is mainly a stylistic thing. Though I could not find any example of this, @staticmethod might help organize your code by being overridable by subclasses. Without it you'd have variants of the function floating around in the module namespace
 
-@property
+**@property**
 The first part is simple:
 
     @property
@@ -87,9 +85,9 @@ returns a new property which inherits everything from the old x plus the given s
     x.deleter 
 works the same way
 
-Details: 
-https://docs.python.org/2/howto/descriptor.html
-https://docs.python.org/3/library/functions.html#property
-https://goo.gl/cLYMI2
+Details: <br>
+- https://docs.python.org/2/howto/descriptor.html
+- https://docs.python.org/3/library/functions.html#property
+- https://goo.gl/cLYMI2
 
 
