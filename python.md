@@ -6,9 +6,9 @@
         * [Subplots using pandas](#subplots-using-pandas)
         * [Subplots using matplotlib](#subplots-using-matplotlib)
    * [Feature for debag](#feature-for-debag)
-   * [Optimization](#Optimization)
+   * [Optimization](#optimization)
         * [decorator - timer](#decorator-timer)
-        * [Time Complexity](#Time-Complexity)
+        * [Time Complexity](#time-complexity)
 
 #### Argparse
 
