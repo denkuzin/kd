@@ -1,8 +1,7 @@
-#### Table of Contents
-- [Argparse](#### Argparse)
-- [gzip file](#### gzip file)
-- [build-in decorators](#### build-in decorators)
-- [asdsadsdsa](#### gzip file)
+[TOC]
+
+
+
 
 
 #### dsadsdsads
