@@ -1,0 +1,5 @@
+# run build of docker
+sudo docker build -t friendlyhello .
+
+# you can find all here:
+https://docs.docker.com/get-started/part2/#recap-and-cheat-sheet-optional
