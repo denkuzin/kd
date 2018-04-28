@@ -2,13 +2,13 @@
    * [argparse](#argparse)
    * [gzip file](#gzip-file)
    * [build-in decorators](#build-in-decorators)
-   * [Visualisation](#visualisation)
-        * [Subplots using pandas](#subplots-using-pandas)
-        * [Subplots using matplotlib](#subplots-using-matplotlib)
-   * [Feature for debag](#feature-for-debag)
-   * [Optimization](#optimization)
+   * [visualisation](#visualisation)
+        * [subplots using pandas](#subplots-using-pandas)
+        * [subplots using matplotlib](#subplots-using-matplotlib)
+   * [feature for debag](#feature-for-debag)
+   * [optimization](#optimization)
         * [decorator timer](#decorator-timer)
-        * [Time Complexity](#time-complexity)
+        * [time complexity](#time-complexity)
 
 #### Argparse
 
