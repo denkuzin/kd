@@ -1,14 +1,34 @@
-Java documentation:  <br>
+#### Table of Content
+
+- [code example](#code-example)
+- [data types](#data-types)
+- [variables](#variables)
+- [relational operators](relational-operators)
+- [if statement](if-statement)
+- [condition statement](condition-statement)
+- [for loop](for-loop)
+- [arrays](arrays)
+- [dict](dict)
+- [OOP](oop)
+- [other notes](other-notes)
+
+
+
+#### Java documentation:  <br>
+
 https://docs.oracle.com/javase/tutorial/java/concepts/index.html
 
+#### Eclipse Che — cloud IDE:
 
-Eclipse Che — cloud IDE:
 - https://habrahabr.ru/post/310438/
 - https://www.eclipse.org/che/getting-started/cloud/
 
-``` java
 
-//code example
+
+
+#### code example
+
+``` java
 public class YourName {
 	public static void main(String[] args) {
 		System.out.println("Hello world");
@@ -16,8 +36,8 @@ public class YourName {
 }
 ```
 
+#### data types
 ``` java
-//Data types
 byte -128 .. 127    (integer)
 short  -32,768 .. 32,767
 int -2^31 .. 2^31 - 1
@@ -29,8 +49,8 @@ char
 java.math.BigDecimal  //very high precision
 ```
 
+#### variables
 ``` java
-//variables
 int myLuckyNumber = 7;
 int sum = 34 + 113;
 int product = 2 * 8;
@@ -45,8 +65,8 @@ string1.concat(string2)
 String all = "Hello" + "World"
 ```
 
+#### relational operators
 ``` java
-//relational operators
 <, <=, >, >=, ==, !=
 && - and
 || - or
@@ -62,8 +82,8 @@ Example: !(false) || true && false)
 -- //decrease by 1 //example: variable++; or variable--;
 ```
 
+#### if statement
 ``` java
-//if statement
 if (condition) {
     /* code */
 } else if (condition) {
@@ -73,6 +93,7 @@ if (condition) {
 }
 ```
 
+####  condition statement
 ``` java
 //ternary condition statement
 char gameResult = (pointsScored > 20) ? 'W' : 'L';
@@ -95,13 +116,15 @@ switch (Number) {
       break;
 }
 ```
+
+#### for loop
 ``` java
 for (int counter = 0; counter < 5; counter++) {
     System.out.println("The counter value is: " + counter);
     }
 ```
 
-
+#### arrays
 ``` java
 /*ARRAYS*/
 import java.util.ArrayList;
@@ -134,6 +157,7 @@ for (Integer temperature : weeklyTemperatures) {   // (:) can be read as "in"
 }
 ```
 
+#### dict
 ``` java
 /*DICT*/
 import java.util.HashMap;
@@ -155,6 +179,7 @@ for (String name: myFriends.keySet()) {   //go through list
 }
 ```
 
+### OOP
 ``` java
 //OOP, classes, objects and methods
 /*A class is a set of instructions that describe how a data structure should behave*/
@@ -216,7 +241,7 @@ class Dog extends Animal {} //means the class Dog uses class Animals
 
 
 
-
+#### other notes
 ``` java
 //OTHER NOTES
 int is allows values between -2,147,483,648 and 2,147,483,647
