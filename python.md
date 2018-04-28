@@ -7,7 +7,7 @@
         * [Subplots using matplotlib](#subplots-using-matplotlib)
    * [Feature for debag](#feature-for-debag)
    * [Optimization](#optimization)
-        * [decorator - timer](#decorator-timer)
+        * [decorator timer](#decorator-timer)
         * [Time Complexity](#time-complexity)
 
 #### Argparse
@@ -143,7 +143,7 @@ if FLAGS.interactive:
 ```
 
 #### Optimization
-##### decorator - timer
+##### decorator timer
 ``` python
 
 import time
