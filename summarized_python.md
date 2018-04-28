@@ -1,5 +1,20 @@
+#Summary 
+
+      - [dsadsdsads](#section-id-4)
+      - [gzip file](#section-id-24)
+      - [build-in decorators](#section-id-33)
+- [Example:](#section-id-35)
+- [executing foo(<__main__.A object at 0xb7dbef0c>,1)](#section-id-50)
+- [executing class_foo(<class '__main__.A'>,1)](#section-id-53)
+- [executing static_foo(1)](#section-id-56)
+- [executing static_foo(hi)](#section-id-59)
+  
 
 
+
+
+
+<div id='section-id-4'/>
 
 #### dsadsdsads
 
@@ -21,6 +36,8 @@ FLAGS, unparsed = parser.parse_known_args()
 print(FLAGS.gamma, FLAGS.rng_seed)
 ```
 
+<div id='section-id-24'/>
+
 #### gzip file
 ``` python
 import gzip
@@ -30,8 +47,12 @@ f.writelines(content)
 f.close()
 ```
 
+<div id='section-id-33'/>
+
 #### build-in decorators
 ``` python
+<div id='section-id-35'/>
+
 #Example:
 class A(object):
     def foo(self,x):
@@ -47,15 +68,23 @@ class A(object):
 a=A()
  
 a.foo(1)
+<div id='section-id-50'/>
+
 # executing foo(<__main__.A object at 0xb7dbef0c>,1)
  
 a.class_foo(1)
+<div id='section-id-53'/>
+
 # executing class_foo(<class '__main__.A'>,1)
  
 a.static_foo(1)
+<div id='section-id-56'/>
+
 # executing static_foo(1)
  
 A.static_foo('hi')
+<div id='section-id-59'/>
+
 # executing static_foo(hi)
 ```
 
