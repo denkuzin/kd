@@ -1,4 +1,4 @@
-# Table of Contents
+#### Table of Contents
 1. [Argparse](#### Argparse)
 2. [gzip file](#### gzip file)
 3. [build-in decorators](#### build-in decorators)
