@@ -10,7 +10,7 @@
         * [decorator timer](#decorator-timer)
         * [time complexity](#time-complexity)
    * [heaps](#heaps)
-   * [collections namedtyple](#collections)
+   * [collections namedtyple](#collections, namedtyple)
 
 #### Argparse
 
