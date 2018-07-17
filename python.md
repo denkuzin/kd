@@ -10,7 +10,7 @@
         * [decorator timer](#decorator-timer)
         * [time complexity](#time-complexity)
    * [heaps](#heaps)
-   * [collections](#collections)
+   * [collections namedtyple](#collections)
 
 #### Argparse
 
@@ -200,7 +200,7 @@ heapq.nlargest(3, a)
 
 
 
-##### Collections
+##### Collections, namedtyple
 
 ``` python
 from collections import namedtuple
