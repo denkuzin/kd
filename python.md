@@ -9,6 +9,8 @@
    * [optimization](#optimization)
         * [decorator timer](#decorator-timer)
         * [time complexity](#time-complexity)
+   * [heaps](#heaps)
+   * [collections](#collections)
 
 #### Argparse
 
@@ -168,3 +170,68 @@ job()
 ```
 ##### Time Complexity
 https://wiki.python.org/moin/TimeComplexity
+
+
+##### Heaps
+``` python
+import heapq
+
+# min heap
+a = list(range(10))[::-1]
+heapq.heapify(a) # build heap
+
+# priority heap
+a = [(0.9, "a"), (0.2, "b"), (0.5, "c"), (0.1, "d"), (0.15, "e")]
+heapq.heapify(a)
+heapq.nlargest(3, a)
+# results:  [(0.9, 'a'), (0.5, 'c'), (0.2, 'b')]
+
+# available methods of heapq class:
+# dir(heapq)
+# -heapify
+# -heappop
+# -heappush
+# -heappushpop
+# -heapreplace
+# -merge
+# -nlargest
+# -nsmallest
+```
+
+
+
+#####Collections
+
+``` python
+from collections import namedtuple
+# simple way to create class
+Cell = namedtuple("my_cell", ["x", "y", "z"])  #, verbose=True
+a = Cell(1,2,3)
+print (a)
+# my_cell(x=1, y=2, z=3)
+cells = []
+for x,y,z in zip(range(0,7), range(1,8), range(2,9)):
+    cells.append(Cell(x,y,z))
+print (cells)
+"""
+[my_cell(x=0, y=1, z=2),
+ my_cell(x=1, y=2, z=3),
+ my_cell(x=2, y=3, z=4),
+ my_cell(x=3, y=4, z=5),
+ my_cell(x=4, y=5, z=6),
+ my_cell(x=5, y=6, z=7),
+ my_cell(x=6, y=7, z=8)]
+"""
+
+# if you want to add a methods to namedtyple, you can inherit namedtuple
+class Cell(namedtuple("my_cell", ["x", "y", "z"]))
+    def lenght(self):
+        return (self.x**2 + self.y**2 + self.z**2)**0.5
+```
+
+
+
+
+
+
+
