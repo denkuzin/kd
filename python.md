@@ -11,6 +11,8 @@
         * [time complexity](#time-complexity)
    * [heaps](#heaps)
    * [namedtyple](#namedtyple)
+   * [split list feature](#split-list-feature)
+   * [reader](#reader)
 
 #### Argparse
 
@@ -230,8 +232,38 @@ class Cell(namedtuple("my_cell", ["x", "y", "z"]))
 ```
 
 
+##### Split list feature
+``` python
+a = [7,1,2,3,4,5,6,7]  # a[0] - number of items, a[1:] - items
+num, *items = a  # pythonik way to split list
+```
 
+##### Reader
 
+``` python
+import sys
+reader = (map(int, line.split()) for line in sys.stdin)
+n, *items = next(reader)
+k, *queries = next(reader)
+```
 
+##### Function memorization
 
+``` python
+from functools import lru_cache
+import time
+
+@lru_cache(maxsize = None)  # unlimited max size
+def calc_sum(a,b):
+    time.sleep(2)
+    return a + b
+
+# %time calc_sum(1,2)
+# CPU times: user 1.14 ms, sys: 42 µs, total: 1.18 ms
+# Wall time: 2 s
+# again
+# %time calc_sum(1,2)
+# CPU times: user 10 µs, sys: 1e+03 ns, total: 11 µs
+# Wall time: 16.2 µs
+```
 
